@@ -20,7 +20,7 @@
 
 - 💬 Pergunte-me sobre **o que precisar**
 
-- 📫 Como entrar em contato comigo * *gabrieloliveiracvo79@gmail.com**
+- 📫 Como entrar em contato comigo *gabrieloliveiracvo79@gmail.com*
 
 - ⚡ Curiosidade **Viciado em Games**
 
