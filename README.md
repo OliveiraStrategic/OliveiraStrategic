@@ -12,7 +12,7 @@
 
 - 👨‍💻 Todos os meus projetos estão disponíveis em [gabrieloliveira.tech](gabrieloliveira.tech)
 
-- 📝 Escrevo regularmente artigos sobre [https://www.linkedin.com/in/gabrieloliveiracvo/ recent-activity/articles/](https://www.linkedin.com/in/gabrieloliveiracvo/recent-activity/articles/)
+- 📝 Escrevo regularmente artigos no linkdin: [https://www.linkedin.com/in/gabrieloliveiracvo/ recent-activity/articles/](https://www.linkedin.com/in/gabrieloliveiracvo/recent-activity/articles/)
 
 - 💬 Pergunte-me sobre **o que precisar**
 
