@@ -5,7 +5,6 @@
 
 <p align="left"> <a href ="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=oliveirastrategic" alt="oliveirastrategic" /></a> </p>
 
-<p align="left"> <a href="https://twitter.com/gabrieolive1" target="blank"><img src="iconi/x.png" alt="gabrieolive1" /></a> </p>
 
 - 🔭 Atualmente estou trabalhando em um projeto **Pessoal**
 
