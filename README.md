@@ -14,7 +14,7 @@
 
 - 🌱 Atualmente estou aprendendo **Java**
 
-- 👨‍💻 Todos os meus projetos estão disponíveis em [gabrieloliveira.tech](gabrieloliveira.tech)
+- 👨‍💻 Todos os meus projetos estão disponíveis em gabrieloliveira.tech
 
 - 📝 Escrevo regularmente artigos no linkdin: [https://www.linkedin.com/in/gabrieloliveiracvo/ recent-activity/articles/](https://www.linkedin.com/in/gabrieloliveiracvo/recent-activity/articles/)
 
