@@ -12,11 +12,9 @@
 
 - 🔭 Atualmente estou trabalhando em um projeto **Pessoal**
 
-- 🌱 Atualmente estou aprendendo **Java**
+- 🌱 Atualmente estou aprendendo **Kotlin**
 
 - 👨‍💻 Todos os meus projetos estão disponíveis em gabrieloliveira.tech
-
-- 📝 Escrevo regularmente artigos no linkdin: [https://www.linkedin.com/in/gabrieloliveiracvo/ recent-activity/articles/](https://www.linkedin.com/in/gabrieloliveiracvo/recent-activity/articles/)
 
 - 💬 Pergunte-me sobre **o que precisar**
 
@@ -27,8 +25,6 @@
 <h3 align="left">Conecte-se comigo:</h3>
 <p align="left">
 <a href="https://github.com/OliveiraStrategic" target="blank"><img align="center" src="iconi/github.png" alt="oliveirastrategic" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/gabrieloliveiracvo" target="blank"><img align="center" src="iconi/lk.png" alt="gabrieloliveiracvo" height="30" width="40" /></a>
-<a href="https://instagram.com/gabrieloliveiracvo" target="blank"><img align="center" src="iconi/in.png" alt="gabrieloliveiracvo" height="30" width="40" /></a>
 <a href ="https://www.youtube.com/c/@gabrieloliveira0" target="blank"><img align="center" src="iconi/yt.png" alt="@gabrieloliveira0" height="30" width="40" /></a> </p>
 
 <h3 align="left">Idiomas e ferramentas:</h3>
