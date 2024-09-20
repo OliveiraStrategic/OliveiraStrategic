@@ -2,7 +2,7 @@
 <h3 align="center">Um desenvolvedor Full Stack mobile apaixonado pelo mundo da tecnologia!</h3>
 
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=oliveirastrategic&show_icons=true&theme=dark&text_color=1daa53&locale=en&layout=compact" alt=" oliveirastrategic" /></p><p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=oliveirastrategic&theme=dark" alt= "oliveiraestratégica" /></p>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=oliveirastrategic&show_icons=true&theme=dark&text_color=1daa53&locale=en&layout=compact" alt=" oliveirastrategic" /></p><p><img [align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=oliveirastrategic&theme=dark" alt= "oliveiraestratégica"](https://github-readme-stats.vercel.app/api/top-langs) /></p>
 
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=oliveirastrategic&label=Profile%20views&color=19a442&style=plastic" alt="oliveirastrategic" /> </p>
