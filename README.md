@@ -1,66 +1,68 @@
-<h1 align="center">Olá 👋, meu nome é Gabriel</h1>
-<h3 align="center">Um desenvolvedor Full Stack apaixonado pelo mundo da tecnologia!</h3>
+<div align="center">
 
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=oliveirastrategic&show_icons=true&theme=dark&text_color=1daa53&locale=en&layout=compact" alt="oliveirastrategic" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=oliveirastrategic&theme=dark" alt="oliveirastrategic" />
+<pre>
+██████╗ ██╗   ██╗██╗  ██████╗ ██╗   ██╗███████╗██████╗      ██████╗ ███████╗████████╗
+██╔══██╗██║   ██║██║ ██╔════╝ ██║   ██║██╔════╝██╔══██╗    ██╔═══██╗██╔════╝╚══██╔══╝
+██████╔╝██║   ██║██║ ██║  ███╗██║   ██║█████╗  ██████╔╝    ██║   ██║███████╗   ██║   
+██╔═══╝ ██║   ██║██║ ██║   ██║██║   ██║██╔══╝  ██╔══██╗    ██║   ██║╚════██║   ██║   
+██║     ╚██████╔╝██║ ╚██████╔╝╚██████╔╝███████╗██║  ██║    ╚██████╔╝███████║   ██║   
+╚═╝      ╚═════╝ ╚═╝  ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝     ╚═════╝ ╚══════╝   ╚═╝   
+</pre>
+
+<p align="center">
+  <code>[ GABRIEL OLIVEIRA ]---[ STATUS: ONLINE ]---[ 🌎 CURVELO, MG ]---[ 🕓 <span id="time">{#current_time#}</span> ]</code>
 </p>
 
-<p align="left">
-  <img src="https://komarev.com/ghpvc/?username=oliveirastrategic&label=Profile%20views&color=19a442&style=plastic" alt="oliveirastrategic" />
-</p>
+---
 
-<p align="left">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=oliveirastrategic" alt="oliveirastrategic" />
-  </a>
-</p>
+<table>
+  <tr>
+    <td valign="top" width="65%">
+      <pre>
+< R E A D M E . t x t >
 
-- 🔭 Atualmente estou trabalhando em um projeto **pessoal**
-- 💬 Pergunte-me sobre **o que precisar**
-- 📫 Como entrar em contato comigo: *gabrieloliveiracvo79@gmail.com*
-- ⚡ Curiosidade: **Viciado em games**
+Iniciando GabrielOS v2.5...
+[▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓] 100%
 
-<h3 align="left">Conecte-se comigo:</h3>
-<p align="left">
-  <a href="https://github.com/OliveiraStrategic" target="_blank" rel="noopener noreferrer">
-    <img src="iconi/github.png" alt="GitHub" height="30" width="40" />
-  </a>
-  <a href="https://www.youtube.com/c/@gabrieloliveira0" target="_blank" rel="noopener noreferrer">
-    <img src="iconi/yt.png" alt="YouTube" height="30" width="40" />
-  </a>
-</p>
+Bem-vindo ao meu Painel de Controle!
+Digite 'help' para ver a lista de comandos.
 
-<h3 align="left">Idiomas e ferramentas:</h3>
-<p align="left">
-  <a href="https://www.w3schools.com/css/" target="_blank" rel="noopener noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3" width="40" height="40" />
-  </a>
-  <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase" width="40" height="40" />
-  </a>
-  <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">
-    <img src="iconi/GIT.png" alt="Git" width="40" height="40" />
-  </a>
-  <a href="https://www.w3.org/html/" target="_blank" rel="noopener noreferrer">
-    <img src="iconi/html5.png" alt="HTML5" width="40" height="40" />
-  </a>
-  <a href="https://www.java.com" target="_blank" rel="noopener noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" width="40" height="40" />
-  </a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">
-    <img src="iconi/javascript.png" alt="JavaScript" width="40" height="40" />
-  </a>
-  <a href="https://www.linux.org/" target="_blank" rel="noopener noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux" width="40" height="40" />
-  </a>
-  <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noopener noreferrer">
-    <img src="iconi/mysql.png" alt="MSSQL" width="40" height="40" />
-  </a>
-  <a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="40" height="40" />
-  </a>
-  <a href="https://www.photoshop.com/en" target="_blank" rel="noopener noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="Photoshop" width="40" height="40" />
-  </a>
-</p>
+<a href="https://github.com/OliveiraStrategic">recrutador@gabriel-dev</a>:~$ <b>sobre</b>
+
+> Sou Analista de Sistemas com foco em infraestrutura,
+  cibersegurança e desenvolvimento de software.
+  Minha missão é transformar desafios complexos em
+  soluções tecnológicas seguras e eficientes.
+  Busco constantemente o aprendizado para estar na
+  vanguarda da inovação tecnológica.
+
+<a href="https://github.com/OliveiraStrategic">recrutador@gabriel-dev</a>:~$ <b>habilidades --core</b>
+
+  [■] Linux & Windows Server
+  [■] Cibersegurança & Análise de Vulnerabilidades
+  [■] Redes & Infraestrutura de TI
+  [■] Desenvolvimento de Software & Scripting
+  [■] Suporte Técnico & Resolução de Problemas
+
+<a href="https://github.com/OliveiraStrategic">recrutador@gabriel-dev</a>:~$ <b>contato</b>
+
+  > Você pode me encontrar nas seguintes redes:
+  > <a href="mailto:gabrieloliveira79@gmail.com">[ E-mail ]</a>
+  > <a href="https://www.linkedin.com/in/SEU-USUARIO-AQUI/">[ LinkedIn ]</a>
+  > <a href="https://github.com/OliveiraStrategic">[ GitHub ]</a>
+
+<a href="https://github.com/OliveiraStrategic">recrutador@gabriel-dev</a>:~$ ▌
+      </pre>
+    </td>
+    <td valign="top" width="35%">
+      <img src="https://github-readme-stats.vercel.app/api?username=OliveiraStrategic&show_icons=true&theme=transparent&include_all_commits=true&count_private=true&hide_border=true&title_color=00ff00&icon_color=00ff00&text_color=00ff00" alt="Métricas de Desenvolvimento" />
+      <br>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=OliveiraStrategic&layout=compact&theme=transparent&hide_border=true&title_color=00ff00&text_color=00ff00" alt="Top Linguagens" />
+      <br>
+      <b>// LOG DE ATIVIDADE RECENTE</b>
+      <pre>{#recent_activity#}</pre>
+    </td>
+  </tr>
+</table>
+
+</div>
