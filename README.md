@@ -60,8 +60,7 @@ Digite 'help' para ver a lista de comandos.
       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=OliveiraStrategic&layout=compact&theme=transparent&hide_border=true&title_color=00ff00&text_color=00ff00" alt="Top Linguagens" />
       <br>
       <b>// LOG DE ATIVIDADE RECENTE</b>
-      <pre>{#recent_activity#}</pre>
-    </td>
+      </td>
   </tr>
 </table>
 
