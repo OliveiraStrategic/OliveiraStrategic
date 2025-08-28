@@ -1,57 +1,16 @@
-name: Atualizar README Dinâmico
+name: Teste de Atividade do README
 
 on:
-  schedule:
-    # Atualiza a cada hora
-    - cron: "0 * * * *"
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Atualizar Perfil
+    name: Rodar Teste de Atividade
 
     steps:
       - uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
-      - name: Atualizar data e hora
-        run: |
-          node -e "
-            const fs = require('fs');
-            const readmePath = './README.md';
-            const options = { timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
-            const date = new Date().toLocaleString('pt-BR', options);
-            const finalDate = \`\${date.replace(',', ' |')} (GMT-3)\`;
-            const readmeContent = fs.readFileSync(readmePath, 'utf-8');
-            const updatedReadme = readmeContent.replace('', finalDate);
-            fs.writeFileSync(readmePath, updatedReadme);
-            console.log(\`Timestamp atualizado para: \${finalDate}\`);
-          "
-      
-      # PASSO DE AUTOCORREÇÃO (AGORA EM NODE.JS)
-      - name: Garantir a existência dos marcadores de atividade
-        run: |
-          node -e "
-            const fs = require('fs');
-            const readmePath = './README.md';
-            const anchor = '<b>// LOG DE ATIVIDADE RECENTE</b>';
-            const placeholders = '\\n';
-            let readmeContent = fs.readFileSync(readmePath, 'utf-8');
-            const regex = new RegExp(\`\${anchor}(\\n[\\s\\S]*)?\`);
-            readmeContent = readmeContent.replace(regex, \`\${anchor}\\n\${placeholders}\`);
-            fs.writeFileSync(readmePath, readmeContent);
-            console.log('Marcadores de atividade verificados e corrigidos.');
-          "
-
-      - name: Atualizar atividade e fazer commit
+      - name: Atualizar seção de atividade
         uses: jamesgeorge007/github-activity-readme@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          COMMIT_MSG: 'chore: atualiza log de atividade e timestamp'
-          MAX_LINES: 7
