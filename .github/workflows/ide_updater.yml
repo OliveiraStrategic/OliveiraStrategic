@@ -19,7 +19,7 @@ jobs:
           node-version: '18'
 
       - name: Gerar stream de commits
-        uses: athul/gh-activity@v1.2.1
+        uses: athul/gh-activity@v1.2.1 # <--- A CORREÇÃO ESTÁ AQUI
         id: activity_step
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
