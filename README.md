@@ -1,4 +1,4 @@
-28/08/2025 18:4128/08/2025 18:37<table width="100%">
+<table width="100%">
   <tr>
     <td colspan="2">
       <img src="https://raw.githubusercontent.com/OliveiraStrategic/OliveiraStrategic/main/assets/vscode_header.png" alt="VS Code Header">
@@ -47,7 +47,7 @@
       </p>
       <br>
       <i>// Live commit stream:</i>
-      <pre>Nenhuma atividade pública recente encontrada.</pre>
+      <pre>// Aguardando stream de commits...</pre>
       <hr>
       <img src="https://raw.githubusercontent.com/OliveiraStrategic/OliveiraStrategic/main/assets/vscode_tab_contact.png" alt="Tab: contact.ts">
       <pre>
