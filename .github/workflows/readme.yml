@@ -12,15 +12,14 @@ jobs:
     name: Atualizar Perfil
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
 
       # Atualiza data e hora
       - name: Atualizar data e hora
-        uses: Srunky/github-readme-time@main
+        uses: G-R-G/make-readme-timestamp@v1
         with:
-          REPLACE_ID: "time"
-          TIME_ZONE: "America/Sao_Paulo"
-          TIME_FORMAT: "DD/MM/YYYY, HH:mm:ss (GMT-3)"
+          timezone: "America/Sao_Paulo"
+          format: "dd/mm/yyyy, HH:MM:ss (GMT-3)"
 
       # Atualiza log de atividade recente
       - name: Atualizar atividade recente
