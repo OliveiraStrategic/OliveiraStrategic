@@ -1,34 +1,33 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/OliveiraStrategic/OliveiraStrategic/main/assets/header_ecg.svg" alt="Header" width="100%">
-</div>
-
-<div align="center">
   <h1>Gabriel Oliveira</h1>
-  <p><b>Analista de Sistemas | Foco em Infraestrutura & Cibersegurança</b></p>
+  <p><b>Analista de Sistemas | Infraestrutura | Cibersegurança</b></p>
+  <p>
+    Bem-vindo ao meu hub de portfólio dinâmico. As informações abaixo são atualizadas automaticamente.
+  </p>
 </div>
-
-> Olá! Sou um profissional de TI focado em criar soluções tecnológicas que são não apenas funcionais, mas também seguras e resilientes. Minha carreira é construída sobre a fundação do aprendizado contínuo, com o objetivo de aplicar uma mentalidade estratégica para resolver problemas complexos de infraestrutura e cibersegurança.
-
-<p align="center">
-  <a href="mailto:gabrieloliveira79@gmail.com"><img src="https://img.shields.io/badge/Canal_Seguro-EMAIL-8A2BE2?style=for-the-badge&logo=protonmail&logoColor=white"></a>
-  &nbsp;
-  <a href="https://www.linkedin.com/in/SEU-USUARIO-AQUI/"><img src="https://img.shields.io/badge/Conexão_Profissional-LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-</p>
 
 ---
 
-### **Arsenal Tecnológico**
+## 🚀 Meus Projetos em Destaque
+*Estes são meus repositórios pinados no GitHub. Adicione ou remova pins para atualizar esta lista.*
 
+*A lista de projetos será carregada aqui...*
+## 🛠️ Tecnologias & Ferramentas
 <p align="center">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=linux,bash,powershell,git,docker,kubernetes,terraform,aws,azure,gcp,mysql,cs,nmap,wireshark,kali&theme=dark&perline=8" />
   </a>
 </p>
 
----
-
-### **Estatísticas de Atividade**
-
+## 📊 Minhas Estatísticas
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=OliveiraStrategic&show_icons=true&theme=highcontrast&include_all_commits=true&count_private=true&hide_border=true&title_color=00aeff&icon_color=00aeff&text_color=c9cacc" alt="Estatísticas do GitHub"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=OliveiraStrategic&show_icons=true&theme=nord&include_all_commits=true&count_private=true&hide_border=true&title_color=00aeff&icon_color=00aeff&text_color=c9cacc" />
+</p>
+
+## 📄 Atividade Recente
+*A atividade recente será carregada aqui...*
+<p align="center">
+<small>
+*Timestamp será carregado aqui...*
+</small>
 </p>
