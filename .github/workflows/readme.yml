@@ -14,13 +14,28 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # Etapa 1: Atualiza a data e hora com formato corrigido
+      # Etapa 1: Instala o Node.js para rodar um script seguro
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      # Etapa 2: Atualiza a data e hora usando um script Node.js à prova de erros
       - name: Atualizar data e hora
         run: |
-          DATE=$(TZ="America/Sao_Paulo" date +"%d/%m/%Y | %H:%M:%S %Z")
-          sed -i "s||$DATE|" README.md
+          node -e "
+            const fs = require('fs');
+            const readmePath = './README.md';
+            const options = { timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+            const date = new Date().toLocaleString('pt-BR', options);
+            const finalDate = \`\${date.replace(',', ' |')} (GMT-3)\`;
+            const readmeContent = fs.readFileSync(readmePath, 'utf-8');
+            const updatedReadme = readmeContent.replace('', finalDate);
+            fs.writeFileSync(readmePath, updatedReadme);
+            console.log(\`Timestamp atualizado para: \${finalDate}\`);
+          "
       
-      # Etapa 2: Atualiza o log de atividade e faz o commit
+      # Etapa 3: Atualiza o log de atividade e faz o commit de TODAS as alterações
       - name: Atualizar atividade e fazer commit
         uses: jamesgeorge007/github-activity-readme@master
         env:
