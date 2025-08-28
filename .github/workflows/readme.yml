@@ -12,21 +12,20 @@ jobs:
     name: Atualizar Perfil
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-      # Atualiza data e hora
+      # Etapa 1: Atualiza a data e hora usando um comando direto e seguro
       - name: Atualizar data e hora
-        uses: G-R-G/make-readme-timestamp@v1
-        with:
-          timezone: "America/Sao_Paulo"
-          format: "dd/mm/yyyy, HH:MM:ss (GMT-3)"
-
-      # Atualiza log de atividade recente
-      - name: Atualizar atividade recente
+        run: |
+          DATE=$(TZ="America/Sao_Paulo" date +'%d/%m/%Y, %H:%M:%S (GMT-3)')
+          sed -i "s||$DATE|" README.md
+      
+      # Etapa 2: Atualiza o log de atividade e faz o commit de TODAS as alterações
+      - name: Atualizar atividade e fazer commit
         uses: jamesgeorge007/github-activity-readme@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          COMMIT_MSG: 'chore: atualiza log de atividade recente'
+          COMMIT_MSG: 'chore: atualiza log de atividade e timestamp'
           MAX_LINES: 7
           REPLACE_MARKER: "{#recent_activity#}"
