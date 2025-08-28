@@ -32,10 +32,6 @@ jobs:
             fs.writeFileSync(readmePath, updatedReadme);
             console.log(\`Timestamp atualizado para: \${finalDate}\`);
           "
-
-      # NOVO PASSO DE DEBUG ABAIXO
-      - name: DEBUG - Exibir conteúdo do README.md
-        run: cat README.md
       
       - name: Atualizar atividade e fazer commit
         uses: jamesgeorge007/github-activity-readme@master
