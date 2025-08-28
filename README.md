@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Gabriel Oliveira</h1>
-  <p><b>Analista de Sistemas | Infraestrutura | Cibersegurança</b></p>
+  <p><b>Analista de TI | Infraestrutura | Cibersegurança</b></p>
   <p>
     Bem-vindo ao meu hub de portfólio dinâmico. As informações abaixo são atualizadas automaticamente.
   </p>
