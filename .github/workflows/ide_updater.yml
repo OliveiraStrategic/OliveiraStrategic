@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Compiling and Pushing Profile Updates
     
-    # ADICIONANDO A PERMISSÃO PARA ESCREVER NO REPOSITÓRIO
     permissions:
       contents: write
 
@@ -25,7 +24,7 @@ jobs:
       - name: Atualizar dados e fazer commit
         run: |
           node -e "
-            const https = require('httpshttps');
+            const https = require('https'); // <--- ERRO CORRIGIDO AQUI
             const fs = require('fs');
             
             const readmePath = './README.md';
@@ -43,11 +42,14 @@ jobs:
                 
                 activityMarkdown = recentEvents.map(event => {
                   if (event.type === 'PushEvent') {
-                    return \`- ⬆️ Fez push de \${event.payload.size} commit(s) para o repositório [**\${event.repo.name}**](https://github.com/\${event.repo.name})\`;
+                    const commitCount = event.payload.size === 1 ? '1 commit' : \`\${event.payload.size} commits\`;
+                    return \`- ⬆️ Fez push de \${commitCount} para [**\${event.repo.name}**](https://github.com/\${event.repo.name})\`;
                   } else if (event.type === 'CreateEvent' && event.payload.ref_type === 'repository') {
                     return \`- ✨ Criou o novo repositório [**\${event.repo.name}**](https://github.com/\${event.repo.name})\`;
                   } else if (event.type === 'IssuesEvent' && event.payload.action === 'opened') {
                     return \`- ❗ Abriu a issue [#\${event.payload.issue.number}](\${event.payload.issue.html_url}) em [**\${event.repo.name}**](https://github.com/\${event.repo.name})\`;
+                  } else if (event.type === 'ForkEvent') {
+                    return \`- 🍴 Criou um fork de [**\${event.payload.forkee.full_name}**](\${event.payload.forkee.html_url})\`;
                   }
                   return null;
                 }).filter(Boolean).join('\\n');
@@ -88,6 +90,9 @@ jobs:
                   res.on('data', (chunk) => data += chunk);
                   res.on('end', () => {
                     try {
+                      if (res.statusCode >= 400) {
+                        return reject(new Error(\`Falha na chamada de API com status \${res.statusCode}: \${data}\`));
+                      }
                       resolve(JSON.parse(data));
                     } catch (e) {
                       reject(e);
