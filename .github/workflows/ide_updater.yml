@@ -9,6 +9,10 @@ jobs:
   update:
     runs-on: ubuntu-latest
     name: Compiling and Pushing Profile Updates
+    
+    # ADICIONANDO A PERMISSÃO PARA ESCREVER NO REPOSITÓRIO
+    permissions:
+      contents: write
 
     steps:
       - uses: actions/checkout@v3
@@ -21,7 +25,7 @@ jobs:
       - name: Atualizar dados e fazer commit
         run: |
           node -e "
-            const https = require('https');
+            const https = require('httpshttps');
             const fs = require('fs');
             
             const readmePath = './README.md';
