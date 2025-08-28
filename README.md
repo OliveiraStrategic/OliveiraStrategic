@@ -10,7 +10,7 @@
 </pre>
 
 <p align="center">
-  <code>[ GABRIEL OLIVEIRA ]---[ STATUS: ONLINE ]---[ 🌎 CURVELO, MG ]---[ 🕓 <span id="time">{#current_time#}</span> ]</code>
+  <code>[ GABRIEL OLIVEIRA ]---[ STATUS: ONLINE ]---[ 🌎 CURVELO, MG ]---[ 🕓 ]</code>
 </p>
 
 ---
