@@ -1,16 +1,11 @@
-name: Teste de Atividade do README
+name: Diagnosticar Nome de Arquivo
 
-on:
-  workflow_dispatch:
+on: workflow_dispatch
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Rodar Teste de Atividade
-
     steps:
       - uses: actions/checkout@v3
-      - name: Atualizar seção de atividade
-        uses: jamesgeorge007/github-activity-readme@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Listar arquivos no diretório
+        run: ls -la
