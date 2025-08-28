@@ -1,76 +1,57 @@
-name: Atualizar README
+name: IDE Profile Updater
 
 on:
   schedule:
-    # Executa todo dia às 12:00 UTC
-    - cron: '0 12 * * *'
-  workflow_dispatch: # Permite rodar manualmente
+    - cron: "0 * * * *" # Atualiza a cada hora
+  workflow_dispatch:
 
 jobs:
-  update-readme:
+  update:
     runs-on: ubuntu-latest
+    name: Compiling and Pushing Profile Updates
 
     steps:
-      - name: Checar repositório
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Atualizar README
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Gerar stream de commits
+        uses: athul/gh-activity@v1.2.1
+        id: activity_step
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MAX_LINES: 5
+
+      - name: Atualizar arquivos do editor
         run: |
-          TIMESTAMP=$(date '+%d/%m/%Y %H:%M:%S')
-          cat <<EOT > README.md
-# 👋 Olá, eu sou Gabriel Oliveira
+          node -e "
+            const fs = require('fs');
+            const readmePath = './README.md';
+            
+            // 1. Atualizar Timestamp no Footer
+            const options = { timeZone: 'America/Sao_Paulo', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' };
+            const date = new Date().toLocaleString('pt-BR', options);
+            const finalDate = \`\${date.replace(',', '')}\`;
+            let readmeContent = fs.readFileSync(readmePath, 'utf-8');
+            readmeContent = readmeContent.replace('', finalDate);
+            console.log(\`Timestamp atualizado para: \${finalDate}\`);
 
-Sou Analista de Desenvolvimento de Sistemas e Analista de TI, apaixonado por tecnologia e por criar soluções práticas para o dia a dia.
+            // 2. Atualizar Stream de Commits
+            const activityMarkdown = \`\${{ steps.activity_step.outputs.activity }}\`;
+            const placeholder = '<pre>// Aguardando stream de commits...</pre>';
+            // Adiciona a atividade dentro de um novo <pre> para manter a formatação
+            const finalActivity = \`<pre>\${activityMarkdown}</pre>\`;
+            readmeContent = readmeContent.replace(placeholder, finalActivity);
+            console.log('Stream de commits inserido com sucesso.');
 
-💻 Trabalho com suporte técnico, manutenção de computadores, configuração de sistemas e gestão de sistemas acadêmicos. Gosto de resolver problemas e otimizar processos, sempre aprendendo novas ferramentas e técnicas.
-
----
-
-## 🛠 Habilidades Técnicas
-
-- 💻 Suporte técnico e manutenção de computadores  
-- 🖥 Configuração de sistemas e softwares  
-- 🌐 Redes e infraestrutura básica  
-- 🔐 Cibersegurança básica  
-- 🐧 Linux e Windows Server  
-- 🖱 Gestão de sistemas acadêmicos  
-- ⚡ Resolução de problemas e troubleshooting  
-
----
-
-## 🚀 Interesses
-
-- Aprender novas tecnologias e linguagens de programação  
-- Explorar soluções em cibersegurança e redes  
-- Automatização de processos e otimização de sistemas  
-- Criar projetos inovadores e práticos no dia a dia de TI  
-
----
-
-## 📂 Experiência Profissional
-
-- **Associação Universitária Santa Úrsula** – Analista de Desenvolvimento de Sistemas / Analista de TI (04/2023 – atualmente)  
-  Gestão de sistemas acadêmicos, suporte a usuários, manutenção e configuração de equipamentos e softwares.
-
-- **Distribuidora de Bebidas Amaral** – Assistente de Suporte de TI (01/2020 – 04/2022)  
-  Suporte técnico, manutenção de computadores, atendimento ao usuário e configuração de softwares corporativos.
-
----
-
-## 📫 Contato
-
-- E-mail: [gabrieloliveira79@gmail.com](mailto:gabrieloliveira79@gmail.com)  
-- GitHub: [SeuLinkAqui](#)  
-
----
-
-> Última atualização: $TIMESTAMP
-EOT
-
-      - name: Commit e push
-        run: |
-          git config --global user.name "Gabriel Oliveira"
-          git config --global user.email "gabrieloliveira79@gmail.com"
-          git add README.md
-          git commit -m "Atualização automática do README [GitHub Actions]" || echo "Nenhuma mudança para commitar"
-          git push
+            fs.writeFileSync(readmePath, readmeContent);
+          "
+      
+      - name: Fazer commit das alterações
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore(profile): auto-update IDE stats'
+          file_pattern: README.md
