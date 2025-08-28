@@ -14,13 +14,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # Etapa 1: Instala o Node.js para rodar um script seguro
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
-      # Etapa 2: Atualiza a data e hora usando um script Node.js à prova de erros
       - name: Atualizar data e hora
         run: |
           node -e "
@@ -34,8 +32,11 @@ jobs:
             fs.writeFileSync(readmePath, updatedReadme);
             console.log(\`Timestamp atualizado para: \${finalDate}\`);
           "
+
+      # NOVO PASSO DE DEBUG ABAIXO
+      - name: DEBUG - Exibir conteúdo do README.md
+        run: cat README.md
       
-      # Etapa 3: Atualiza o log de atividade e faz o commit de TODAS as alterações
       - name: Atualizar atividade e fazer commit
         uses: jamesgeorge007/github-activity-readme@master
         env:
