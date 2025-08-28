@@ -1,5 +1,4 @@
-```yaml
-name: Atualizar README Dinâmico
+name: API README Updater
 
 on:
   schedule:
@@ -7,9 +6,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
-    name: Atualizar Painel Dinâmico
+    name: Atualizar dados da API
 
     steps:
       - uses: actions/checkout@v3
@@ -19,42 +18,38 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Atualizar data e hora
-        run: |
-          node -e "
-            const fs = require('fs');
-            const readmePath = './README.md';
-            const options = { timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
-            const date = new Date().toLocaleString('pt-BR', options);
-            const finalDate = \`\${date.replace(',', ' |')} (GMT-3)\`;
-            let readmeContent = fs.readFileSync(readmePath, 'utf-8');
-            readmeContent = readmeContent.replace('', finalDate);
-            fs.writeFileSync(readmePath, readmeContent);
-            console.log(\`Timestamp atualizado para: \${finalDate}\`);
-          "
-
-      - name: Gerar log de atividade
+      - name: Gerar stream de atividade
         uses: athul/gh-activity@v1.2.1
         id: activity_step
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MAX_LINES: 5
 
-      - name: Inserir log de atividade no README
+      - name: Atualizar README com dados dinâmicos
         run: |
           node -e "
             const fs = require('fs');
             const readmePath = './README.md';
-            const activityMarkdown = \`${{ steps.activity_step.outputs.activity }}\`;
-            const placeholder = '\`\`\`\\n**[O log de atividade recente aparecerá aqui...]**\\n\`\`\`';
-            let readmeContent = fs.readFileSync(readmePath, 'utf-8');
-            readmeContent = readmeContent.replace(placeholder, activityMarkdown);
-            fs.writeFileSync(readmePath, readmeContent);
-            console.log('Log de atividade inserido com sucesso.');
-          "
 
+            // 1. Atualizar Timestamp
+            const options = { timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+            const date = new Date().toLocaleString('pt-BR', options);
+            const finalDate = \`\${date.replace(',', '')} (BRT)\`;
+            let readmeContent = fs.readFileSync(readmePath, 'utf-8');
+            readmeContent = readmeContent.replace('', finalDate);
+            console.log(\`Timestamp atualizado para: \${finalDate}\`);
+
+            // 2. Atualizar Stream de Atividade
+            const activityMarkdown = \`\${{ steps.activity_step.outputs.activity }}\`;
+            const placeholder = '\`\`\`md\\n// Aguardando stream de eventos...\\n\`\`\`';
+            readmeContent = readmeContent.replace(placeholder, \`\`\`md\\n\${activityMarkdown}\`\`\`);
+            console.log('Stream de atividade inserido com sucesso.');
+
+            fs.writeFileSync(readmePath, readmeContent);
+          "
+      
       - name: Fazer commit das alterações
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: 'chore: atualiza painel dinâmico'
+          commit_message: 'chore(api): atualiza dados dinâmicos do perfil'
           file_pattern: README.md
