@@ -1,15 +1,15 @@
+```yaml
 name: Atualizar README Dinâmico
 
 on:
   schedule:
-    # Atualiza a cada hora
-    - cron: "0 * * * *"
+    - cron: "0 * * * *" # Atualiza a cada hora
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Atualizar Perfil
+    name: Atualizar Painel Dinâmico
 
     steps:
       - uses: actions/checkout@v3
@@ -27,16 +27,34 @@ jobs:
             const options = { timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
             const date = new Date().toLocaleString('pt-BR', options);
             const finalDate = \`\${date.replace(',', ' |')} (GMT-3)\`;
-            const readmeContent = fs.readFileSync(readmePath, 'utf-8');
-            const updatedReadme = readmeContent.replace('', finalDate);
-            fs.writeFileSync(readmePath, updatedReadme);
+            let readmeContent = fs.readFileSync(readmePath, 'utf-8');
+            readmeContent = readmeContent.replace('', finalDate);
+            fs.writeFileSync(readmePath, readmeContent);
             console.log(\`Timestamp atualizado para: \${finalDate}\`);
           "
-      
-      - name: Atualizar atividade e fazer commit
-        uses: jamesgeorge007/github-activity-readme@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Gerar log de atividade
+        uses: athul/gh-activity@v1.2.1
+        id: activity_step
         with:
-          COMMIT_MSG: 'chore: atualiza log de atividade e timestamp'
-          MAX_LINES: 7
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MAX_LINES: 5
+
+      - name: Inserir log de atividade no README
+        run: |
+          node -e "
+            const fs = require('fs');
+            const readmePath = './README.md';
+            const activityMarkdown = \`${{ steps.activity_step.outputs.activity }}\`;
+            const placeholder = '\`\`\`\\n**[O log de atividade recente aparecerá aqui...]**\\n\`\`\`';
+            let readmeContent = fs.readFileSync(readmePath, 'utf-8');
+            readmeContent = readmeContent.replace(placeholder, activityMarkdown);
+            fs.writeFileSync(readmePath, readmeContent);
+            console.log('Log de atividade inserido com sucesso.');
+          "
+
+      - name: Fazer commit das alterações
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: atualiza painel dinâmico'
+          file_pattern: README.md
