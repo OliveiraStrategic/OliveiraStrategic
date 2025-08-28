@@ -33,10 +33,15 @@ jobs:
             console.log(\`Timestamp atualizado para: \${finalDate}\`);
           "
       
+      # NOVO PASSO DE AUTOCORREÇÃO
+      - name: Garantir a existência dos marcadores de atividade
+        run: |
+          sed -i '//d' README.md
+          sed -i '//d' README.md
+          sed -i '/<b>\/\/ LOG DE ATIVIDADE RECENTE<\/b>/a \n' README.md
+      
       - name: Atualizar atividade e fazer commit
         uses: jamesgeorge007/github-activity-readme@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          COMMIT_MSG: 'chore: atualiza log de atividade e timestamp'
-          MAX_LINES: 7
