@@ -33,13 +33,21 @@ jobs:
             console.log(\`Timestamp atualizado para: \${finalDate}\`);
           "
       
-      # NOVO PASSO DE AUTOCORREÇÃO
+      # PASSO DE AUTOCORREÇÃO (AGORA EM NODE.JS)
       - name: Garantir a existência dos marcadores de atividade
         run: |
-          sed -i '//d' README.md
-          sed -i '//d' README.md
-          sed -i '/<b>\/\/ LOG DE ATIVIDADE RECENTE<\/b>/a \n' README.md
-      
+          node -e "
+            const fs = require('fs');
+            const readmePath = './README.md';
+            const anchor = '<b>// LOG DE ATIVIDADE RECENTE</b>';
+            const placeholders = '\\n';
+            let readmeContent = fs.readFileSync(readmePath, 'utf-8');
+            const regex = new RegExp(\`\${anchor}(\\n[\\s\\S]*)?\`);
+            readmeContent = readmeContent.replace(regex, \`\${anchor}\\n\${placeholders}\`);
+            fs.writeFileSync(readmePath, readmeContent);
+            console.log('Marcadores de atividade verificados e corrigidos.');
+          "
+
       - name: Atualizar atividade e fazer commit
         uses: jamesgeorge007/github-activity-readme@master
         env:
