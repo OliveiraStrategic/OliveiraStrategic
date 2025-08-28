@@ -45,3 +45,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          COMMIT_MSG: 'chore: atualiza log de atividade e timestamp'
+          MAX_LINES: 7
