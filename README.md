@@ -1,47 +1,69 @@
-# 👋 Olá, eu sou Gabriel Oliveira
-
-Sou Analista de Desenvolvimento de Sistemas e Analista de TI, apaixonado por tecnologia e por criar soluções práticas para o dia a dia.
-
-💻 Trabalho com suporte técnico, manutenção de computadores, configuração de sistemas e gestão de sistemas acadêmicos. Gosto de resolver problemas e otimizar processos, sempre aprendendo novas ferramentas e técnicas.
-
----
-
-## 🛠 Habilidades Técnicas
-
-- 💻 Suporte técnico e manutenção de computadores  
-- 🖥 Configuração de sistemas e softwares  
-- 🌐 Redes e infraestrutura básica  
-- 🔐 Cibersegurança básica  
-- 🐧 Linux e Windows Server  
-- 🖱 Gestão de sistemas acadêmicos  
-- ⚡ Resolução de problemas e troubleshooting  
-
----
-
-## 🚀 Interesses
-
-- Aprender novas tecnologias e linguagens de programação  
-- Explorar soluções em cibersegurança e redes  
-- Automatização de processos e otimização de sistemas  
-- Criar projetos inovadores e práticos no dia a dia de TI  
-
----
-
-## 📂 Experiência Profissional
-
-- **Associação Universitária Santa Úrsula** – Analista de Desenvolvimento de Sistemas / Analista de TI (04/2023 – atualmente)  
-  Gestão de sistemas acadêmicos, suporte a usuários, manutenção e configuração de equipamentos e softwares.
-
-- **Distribuidora de Bebidas Amaral** – Assistente de Suporte de TI (01/2020 – 04/2022)  
-  Suporte técnico, manutenção de computadores, atendimento ao usuário e configuração de softwares corporativos.
-
----
-
-## 📫 Contato
-
-- E-mail: [gabrieloliveira79@gmail.com](mailto:gabrieloliveira79@gmail.com)  
-- GitHub: [SeuLinkAqui](#)  
-
----
-
-> "Tecnologia não é sobre o que você sabe, mas sobre como você aplica o conhecimento para resolver problemas reais."
+<table width="100%">
+  <tr>
+    <td colspan="2">
+      <img src="https://raw.githubusercontent.com/OliveiraStrategic/OliveiraStrategic/main/assets/vscode_header.png" alt="VS Code Header">
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" valign="top">
+      <img src="https://raw.githubusercontent.com/OliveiraStrategic/OliveiraStrategic/main/assets/vscode_explorer.png" alt="VS Code Explorer">
+      <br>
+      <code>
+        &nbsp;&nbsp;📄 about.md<br>
+        &nbsp;&nbsp;⚙️ config.json<br>
+        &nbsp;&nbsp;📈 telemetry.go<br>
+        &nbsp;&nbsp;🌐 contact.ts<br>
+      </code>
+    </td>
+    <td width="75%" valign="top">
+      <img src="https://raw.githubusercontent.com/OliveiraStrategic/OliveiraStrategic/main/assets/vscode_tab_about.png" alt="Tab: about.md">
+      <blockquote>
+        <h3>Olá, eu sou o Gabriel Oliveira.</h3>
+        <p>Um Analista de Sistemas focado em criar soluções tecnológicas que são não apenas funcionais, mas também seguras e resilientes. Minha carreira é construída sobre a fundação do aprendizado contínuo, com o objetivo de aplicar uma mentalidade estratégica para resolver problemas complexos de infraestrutura e cibersegurança.</p>
+      </blockquote>
+      <hr>
+      <img src="https://raw.githubusercontent.com/OliveiraStrategic/OliveiraStrategic/main/assets/vscode_tab_config.png" alt="Tab: config.json">
+      <pre>
+{
+  "name": "Gabriel Oliveira",
+  "title": "Systems Analyst",
+  "focus_areas": [
+    "Cybersecurity",
+    "IT Infrastructure",
+    "System Administration (Linux & Windows)",
+    "Automation & Scripting"
+  ],
+  "tool_belt": [
+    "Docker", "Kubernetes", "Terraform",
+    "AWS", "Azure", "GCP",
+    "Bash", "PowerShell", "Git"
+  ]
+}
+      </pre>
+      <hr>
+      <img src="https://raw.githubusercontent.com/OliveiraStrategic/OliveiraStrategic/main/assets/vscode_tab_telemetry.png" alt="Tab: telemetry.go">
+      <p align="center">
+        <img src="https://github-readme-stats.vercel.app/api?username=OliveiraStrategic&show_icons=true&theme=transparent&include_all_commits=true&count_private=true&hide_border=true&title_color=33A9F2&icon_color=33A9F2&text_color=C9D1D9" alt="GitHub Stats"/>
+      </p>
+      <br>
+      <i>// Live commit stream:</i>
+      <pre>// Aguardando stream de commits...</pre>
+      <hr>
+      <img src="https://raw.githubusercontent.com/OliveiraStrategic/OliveiraStrategic/main/assets/vscode_tab_contact.png" alt="Tab: contact.ts">
+      <pre>
+export const contact = {
+  email: "<a href="mailto:gabrieloliveira79@gmail.com">gabrieloliveira79@gmail.com</a>",
+  linkedin: "<a href="https://www.linkedin.com/in/SEU-USUARIO-AQUI/">/in/SEU-USUARIO-AQUI</a>"
+};
+      </pre>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img src="https://raw.githubusercontent.com/OliveiraStrategic/OliveiraStrategic/main/assets/vscode_footer.png" alt="VS Code Footer">
+      <p align="right">
+        <code>main* &nbsp;&nbsp; | &nbsp;&nbsp; UTF-8 &nbsp;&nbsp; | &nbsp;&nbsp; Último Commit: &nbsp;&nbsp;</code>
+      </p>
+    </td>
+  </tr>
+</table>
