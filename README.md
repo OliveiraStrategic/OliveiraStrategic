@@ -1,64 +1,27 @@
 <div align="center">
-
-<pre>
-██████╗ ██╗   ██╗██╗  ██████╗ ██╗   ██╗███████╗██████╗      ██████╗ ███████╗████████╗
-██╔══██╗██║   ██║██║ ██╔════╝ ██║   ██║██╔════╝██╔══██╗    ██╔═══██╗██╔════╝╚══██╔══╝
-██████╔╝██║   ██║██║ ██║  ███╗██║   ██║█████╗  ██████╔╝    ██║   ██║███████╗   ██║   
-██╔═══╝ ██║   ██║██║ ██║   ██║██║   ██║██╔══╝  ██╔══██╗    ██║   ██║╚════██║   ██║   
-██║     ╚██████╔╝██║ ╚██████╔╝╚██████╔╝███████╗██║  ██║    ╚██████╔╝███████║   ██║   
-╚═╝      ╚═════╝ ╚═╝  ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝     ╚═════╝ ╚══════╝   ╚═╝   
-</pre>
+  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="300" alt="Tech GIF">
+</div>
 
 <p align="center">
   <code>[ GABRIEL OLIVEIRA ]---[ STATUS: ONLINE ]---[ 🌎 CURVELO, MG ]---[ 🕓 ]</code>
 </p>
-</div>
 
 ---
 
-<div align="center">
-<pre>
-< R E A D M E . t x t >
+### 👨‍💻 Sobre Mim & Minha Missão
+> Olá! Sou um Analista de Sistemas com foco em infraestrutura, cibersegurança e desenvolvimento de software. Minha missão é transformar desafios complexos em soluções tecnológicas seguras e eficientes, buscando constantemente o aprendizado para estar na vanguarda da inovação tecnológica. Sinta-se à vontade para se conectar!
 
-Iniciando GabrielOS v2.5...
-[▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓] 100%
+*(Esta seção acima é sua! Edite o texto como quiser, a qualquer momento.)*
 
-Bem-vindo ao meu Painel de Controle!
-Digite 'help' para ver a lista de comandos.
+---
 
-<a href="https://github.com/OliveiraStrategic">recrutador@gabriel-dev</a>:~$ <b>sobre</b>
-
-> Sou Analista de Sistemas com foco em infraestrutura,
-  cibersegurança e desenvolvimento de software.
-  Minha missão é transformar desafios complexos em
-  soluções tecnológicas seguras e eficientes.
-  Busco constantemente o aprendizado para estar na
-  vanguarda da inovação tecnológica.
-
-<a href="https://github.com/OliveiraStrategic">recrutador@gabriel-dev</a>:~$ <b>habilidades --core</b>
-
-  [■] Linux & Windows Server
-  [■] Cibersegurança & Análise de Vulnerabilidades
-  [■] Redes & Infraestrutura de TI
-  [■] Desenvolvimento de Software & Scripting
-  [■] Suporte Técnico & Resolução de Problemas
-
-<a href="https://github.com/OliveiraStrategic">recrutador@gabriel-dev</a>:~$ <b>contato</b>
-
-  > Você pode me encontrar nas seguintes redes:
-  > <a href="mailto:gabrieloliveira79@gmail.com">[ E-mail ]</a>
-  > <a href="https://www.linkedin.com/in/SEU-USUARIO-AQUI/">[ LinkedIn ]</a>
-  > <a href="https://github.com/OliveiraStrategic">[ GitHub ]</a>
-
-<a href="https://github.com/OliveiraStrategic">recrutador@gabriel-dev</a>:~$ ▌
-</pre>
-</div>
-
-### 📊 Painel de Monitoramento
+### 🚀 Painel de Controle Dinâmico
+*A seção abaixo é atualizada automaticamente por uma automação.*
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=OliveiraStrategic&show_icons=true&theme=transparent&include_all_commits=true&count_private=true&hide_border=true&title_color=00ff00&icon_color=00ff00&text_color=00ff00" alt="Métricas de Desenvolvimento" width="48%"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=OliveiraStrategic&layout=compact&theme=transparent&hide_border=true&title_color=00ff00&text_color=00ff00" alt="Top Linguagens" width="48%"/>
 </p>
 
-### 📃 Log de Atividade Recente
+#### 📃 Log de Atividade Recente
+**[O log de atividade recente aparecerá aqui...]**
