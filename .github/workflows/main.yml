@@ -1,0 +1,32 @@
+name: Atualizar Hub de Portfólio
+
+on:
+  schedule:
+    - cron: "0 * * * *" # Atualiza a cada hora
+  workflow_dispatch:
+
+jobs:
+  update_readme:
+    runs-on: ubuntu-latest
+    name: Atualizar Dados Dinâmicos do README
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Rodar script de atualização
+        run: node scripts/update-readme.js
+        env:
+          PROFILE_PAT: ${{ secrets.PROFILE_PAT }}
+      
+      - name: Fazer commit das alterações
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore(profile): atualiza hub de portfólio'
+          file_pattern: README.md
