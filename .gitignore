@@ -1,9 +1,0 @@
-# Gemini system directories
-.gemini/
-
-# Operating system files
-.DS_Store
-Thumbs.db
-
-# Log files
-*.log

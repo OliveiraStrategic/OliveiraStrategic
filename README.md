@@ -1,28 +1,91 @@
-# Oliveira Strategic
+# Olá, eu sou o Gabriel de Oliveira! 👋
 
-Arquivo pessoal digital de Gabriel Oliveira.
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=4CAF50&center=true&vCenter=true&width=450&lines=Software+Engineer;Postgrad+Web+%26+Mobile;IT+Analyst;Automation+%26+Infrastructure" alt="Typing SVG" />
+</div>
 
-## Propósito
+<p align="center">
+  <a href="https://github.com/OliveiraStrategic/portfolio-site">
+    <img src="https://img.shields.io/badge/Portf%C3%B3lio-Online-0A0F1A?style=for-the-badge&logo=safari&logoColor=4CAF50&labelColor=1a2333" alt="Portfólio">
+  </a>
+  <a href="https://www.linkedin.com/in/gabrieloliveiracvo">
+    <img src="https://img.shields.io/badge/LinkedIn-Gabriel-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://discord.com/users/622884559834316810">
+    <img src="https://img.shields.io/badge/Discord-gabriel-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
+  </a>
+</p>
 
-Este site não é uma empresa, agência, landing page ou blog tradicional. É um espaço pessoal para reunir trajetória, interesses, projetos, experimentos e coisas construídas ao longo do tempo.
+---
 
-## Estrutura
+## 👨‍💻 Sobre Mim / About Me
 
-- `index.html`: página inicial.
-- `pages/`: páginas permanentes do arquivo pessoal.
-- `jogos/`: jogos web isolados por pasta.
-- `assets/`: CSS, JavaScript, imagens e documentos.
-- `data/`: conteúdo modular usado pelas páginas.
+Sou formado em **Engenharia de Software** pela *UniFatecie* e atualmente pós-graduando em **Desenvolvimento de Sistemas Web e Aplicativos Móveis** pelo *IFSP (Instituto Federal de São Paulo)*. Atuo como **Analista de TI** na *Associação Universitária Santa Úrsula*, com foco em infraestrutura de rede, administração de Windows Server, automações e suporte avançado.
 
-## Manutenção
+*I am a **Software Engineer** graduated from UniFatecie and a postgraduate student in **Web Systems and Mobile Apps Development** at IFSP. I work as an **IT Analyst** at Associação Universitária Santa Úrsula, focusing on infrastructure, Windows Server, network administration, automation, and advanced tech support.*
 
-- Atualize dados pessoais em `data/profile.js`.
-- Atualize a linha do tempo em `data/timeline.js`.
-- Atualize laboratório em `data/lab.js`.
-- Atualize projetos em `data/projects.js`.
-- Atualize coleções em `data/collections.js`.
-- Atualize jogos em `data/games.js`.
+---
 
-## GitHub Pages
+## 🛠️ Tecnologias & Ferramentas / Tech Stack
 
-Publique a raiz do repositório pelo GitHub Pages. O site foi criado com HTML, CSS e JavaScript puro.
+<p align="left">
+  <!-- Languages -->
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/Lua-2C2D72?style=flat-square&logo=lua&logoColor=white" alt="Lua">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="SQL">
+  <br/>
+  <!-- Infra & OS -->
+  <img src="https://img.shields.io/badge/Windows%20Server-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows Server">
+  <img src="https://img.shields.io/badge/Active%20Directory-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Active Directory">
+  <img src="https://img.shields.io/badge/Networks-Infrastructure-grey?style=flat-square&logo=cisco&logoColor=white" alt="Networks">
+  <img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white" alt="PowerShell">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux">
+  <br/>
+  <!-- Tools -->
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub">
+  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white" alt="VS Code">
+</p>
+
+---
+
+## ⚡ Status Atual / What I'm Up To
+
+- 🎓 **Estudando:** Sistemas Web e Dispositivos Móveis no IFSP, Arquitetura de Software e Segurança da Informação.
+- 🛠️ **Desenvolvendo:** Meu portfólio premium com suporte multilíngue dinâmico e scripts interativos.
+- 🏎️ **Explorando:** Automobilismo (Fórmula 1, Le Mans), ciclismo e a física/álgebra linear aplicada a jogos (MTA/Lua).
+
+---
+
+## 🏆 Projetos em Destaque / Featured Projects
+
+### 🌐 [Portfolio Site](https://github.com/OliveiraStrategic/portfolio-site)
+Portfólio profissional premium e altamente dinâmico, desenvolvido do zero com HTML5, Vanilla CSS3 (desenho de layouts fluidos e responsivos para todos os monitores) e JavaScript moderno.
+- 🌍 **Internacionalização (i18n):** Suporte nativo completo a Português, Inglês e Espanhol em tempo real.
+- 📡 **Dados Dinâmicos:** Indicadores em tempo real de latência de Ping e climatologia automática via geolocalização IP com sistema inteligente de fallback.
+- 🎮 **Jogos Retro:** Inclui clones de jogos clássicos como Pong, Tetris, Snake, Flappy Bird, Doom e Breakout jogáveis no navegador.
+
+### 🚜 [MTA Harvester Gore System](https://github.com/OliveiraStrategic/mta-harvester-gore-system)
+Um mod avançado para Multi Theft Auto: San Andreas (MTA:SA) que adiciona um sistema de colheita realista.
+- 📐 **Matemática Aplicada:** Lógica avançada em Lua baseada em matrizes 3D e álgebra linear para detectar posicionamento e colisões do cortador da colheitadeira.
+- ✨ **Otimização:** Controle preciso de cooldown de quadros (Throttling) para prevenir perda de frames e manter 60 FPS estáveis mesmo com dezenas de entidades.
+
+---
+
+## 📈 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=OliveiraStrategic&show_icons=true&theme=tokyonight&count_private=true" alt="Estatísticas do GitHub" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=OliveiraStrategic&layout=compact&theme=tokyonight" alt="Linguagens mais usadas" />
+</p>
+
+---
+
+<div align="center">
+  <sub>Construído com 💚 por Gabriel de Oliveira. Visite meu <a href="https://github.com/OliveiraStrategic/portfolio-site">Portfólio Online</a>.</sub>
+</div>
