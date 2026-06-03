@@ -74,19 +74,27 @@ Um mod avançado para Multi Theft Auto: San Andreas (MTA:SA) que adiciona um sis
 
 ---
 
-## 📈 GitHub Stats
+## 📊 Estatísticas do GitHub / GitHub Profile Metrics
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=OliveiraStrategic&theme=tokyonight" alt="Estatísticas do GitHub" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=OliveiraStrategic&theme=tokyonight" alt="GitHub Streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=OliveiraStrategic&theme=tokyonight" alt="Linguagens mais usadas" />
-</p>
+<div align="center">
+  <table width="100%">
+    <tr>
+      <td align="center" width="50%">
+        <strong>Métricas Gerais</strong><br/><br/>
+        <img src="https://img.shields.io/badge/Contribui%C3%A7%C3%B5es_2026-47_Contribs-38bdae?style=for-the-badge&logo=github&logoColor=white" alt="Contribuições 2026" /><br/>
+        <img src="https://img.shields.io/badge/Reposit%C3%B3rios_P%C3%BAblicos-14_Repos-bf91f3?style=for-the-badge&logo=git&logoColor=white" alt="Repositórios Públicos" /><br/>
+        <img src="https://img.shields.io/badge/Membro_Desde-2023-orange?style=for-the-badge&logo=github&logoColor=white" alt="Tempo no GitHub" /><br/>
+        <img src="https://img.shields.io/badge/Localiza%C3%A7%C3%A3o-Curvelo,_MG-blue?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Localização" />
+      </td>
+      <td align="center" width="50%">
+        <strong>Principais Linguagens</strong><br/><br/>
+        <img src="https://img.shields.io/badge/JavaScript-60%25-f7df1e?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" /><br/>
+        <img src="https://img.shields.io/badge/Lua-25%25-2c2d72?style=for-the-badge&logo=lua&logoColor=white" alt="Lua" /><br/>
+        <img src="https://img.shields.io/badge/HTML5_%26_CSS3-15%25-e34f26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML/CSS" />
+      </td>
+    </tr>
+  </table>
+</div>
 
 ---
 
