@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>/</loc></url>
+  <url><loc>/pages/quem-sou.html</loc></url>
+  <url><loc>/pages/mapa-pessoal.html</loc></url>
+  <url><loc>/pages/jornada.html</loc></url>
+  <url><loc>/pages/laboratorio.html</loc></url>
+  <url><loc>/pages/projetos.html</loc></url>
+  <url><loc>/pages/jogos.html</loc></url>
+  <url><loc>/pages/colecoes.html</loc></url>
+  <url><loc>/pages/contato.html</loc></url>
+  <url><loc>/pages/galeria.html</loc></url>
+  <url><loc>/jogos/</loc></url>
+  <url><loc>/jogos/snake/</loc></url>
+  <url><loc>/jogos/tetris/</loc></url>
+  <url><loc>/jogos/pong/</loc></url>
+  <url><loc>/jogos/breakout/</loc></url>
+  <url><loc>/jogos/flappybird/</loc></url>
+  <url><loc>/jogos/doom/</loc></url>
+</urlset>

@@ -1,0 +1,17 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1100" fill="#111315"/>
+  <rect width="900" height="1100" fill="url(#softLight)" opacity="0.72"/>
+  <circle cx="450" cy="376" r="168" fill="#1b1d20"/>
+  <circle cx="450" cy="322" r="72" fill="#2a2b2d"/>
+  <path d="M290 540C316 459 370 418 450 418C530 418 584 459 610 540" fill="#2a2b2d"/>
+  <path d="M190 780H710" stroke="#B08D57" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+  <text x="450" y="846" text-anchor="middle" font-family="Georgia, serif" font-size="42" fill="#F3F0EA">Gabriel Oliveira</text>
+  <text x="450" y="894" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#AAA39A">arquivo pessoal digital</text>
+  <defs>
+    <radialGradient id="softLight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(450 180) rotate(90) scale(720 620)">
+      <stop stop-color="#2A2926"/>
+      <stop offset="0.48" stop-color="#17191B"/>
+      <stop offset="1" stop-color="#0C0D0F"/>
+    </radialGradient>
+  </defs>
+</svg>
