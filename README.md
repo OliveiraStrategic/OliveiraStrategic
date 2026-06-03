@@ -77,11 +77,15 @@ Um mod avançado para Multi Theft Auto: San Andreas (MTA:SA) que adiciona um sis
 ## 📈 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=OliveiraStrategic&show_icons=true&theme=tokyonight&count_private=true" alt="Estatísticas do GitHub" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=OliveiraStrategic&theme=tokyonight" alt="Estatísticas do GitHub" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=OliveiraStrategic&layout=compact&theme=tokyonight" alt="Linguagens mais usadas" />
+  <img src="https://streak-stats.demolab.com/?user=OliveiraStrategic&theme=tokyonight" alt="GitHub Streak" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=OliveiraStrategic&theme=tokyonight" alt="Linguagens mais usadas" />
 </p>
 
 ---
